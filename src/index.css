@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tokens Base */
+  --color-auction-primary: #5856D6;
+  --color-auction-urgent: #FF3B30;
+  --color-auction-success: #34C759;
+  --color-auction-neutral: #8E8E93;
+
+  /* Tokens de Componente (Dark Mode Ready) */
+  --color-auction-card-bg: white;
+  --color-auction-text: #1f2937;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --color-auction-card-bg: #1e1e2e;
+  --color-auction-text: #f3f4f6;
+}
